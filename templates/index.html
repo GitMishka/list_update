@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple String App</title>
+</head>
+<body>
+    <h1>Add a string to the list</h1>
+    <form method="post">
+        <input type="text" name="string_input" placeholder="Enter a string">
+        <button type="submit">Add to list</button>
+    </form>
+    <h2>Strings in the list:</h2>
+    <ul>
+        {% for string in string_list %}
+        <li>{{ string }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
